@@ -1,20 +1,53 @@
-# Python 缓存文件
+# ===================== Python 通用忽略规则 =====================
+# 字节编译/优化文件
 __pycache__/
+*.py[cod]
+*$py.class
 *.pyc
 *.pyo
 *.pyd
-
-# 环境变量文件（含API密钥）
-.env
-.env.local
-
-# 会话数据（可选，不想上传本地聊天记录则添加）
-sessions/
-
-# 操作系统临时文件
-.DS_Store
-Thumbs.db
+*.so
 
 # 虚拟环境
-venv/
+.env
+.venv
 env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# 项目打包/分发文件
+.Python
+build/
+dist/
+*.egg-info/
+*.egg
+MANIFEST
+
+# 测试/覆盖率报告
+.coverage
+.coverage.*
+.cache
+htmlcov/
+.pytest_cache/
+
+# Jupyter Notebook 缓存
+.ipynb_checkpoints
+
+# mypy 缓存
+.mypy_cache/
+
+# ===================== 项目专属忽略规则 =====================
+# 环境变量文件（含API密钥，绝对不能上传）
+.env.local
+
+# 会话数据（本地聊天记录，无需上传）
+sessions/
+
+# ===================== 操作系统通用忽略规则 =====================
+# Windows 临时文件
+Thumbs.db
+
+# Mac 临时文件
+.DS_Store
