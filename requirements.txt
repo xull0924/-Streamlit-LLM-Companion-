@@ -1,0 +1,12 @@
+# 核心Web框架：构建可视化界面
+streamlit>=1.30.0,<2.0.0
+
+# OpenAI API客户端：调用DeepSeek大模型（兼容OpenAI格式）
+openai>=1.10.0,<2.0.0
+
+# 环境变量管理：安全存储API密钥（非必需但推荐）
+python-dotenv>=1.0.0,<2.0.0
+
+# 可选依赖：提升中文显示/处理兼容性（按需添加）
+# charset-normalizer>=3.3.2
+# pywin32>=306 ; platform_system == "Windows"
